@@ -1,32 +1,14 @@
-\# Network Inventory Scanner 🔍
+# Network Inventory Scanner 🔍
 
+## 📝 Descrição
+Este projeto é uma ferramenta de automação de rede desenvolvida em **Python** para realizar a descoberta de ativos (Asset Discovery) em uma rede local (LAN).
 
+## 🛠️ O que foi feito (Conceitos de Redes)
+* **Protocolo ARP:** O script utiliza requisições ARP para mapear endereços IP para endereços MAC.
+* **Camada 2 do Modelo OSI:** A varredura foca na camada de enlace para identificar os fabricantes dos dispositivos.
+* **Inventário Automatizado:** Os resultados são exportados diretamente para um arquivo CSV para facilitar o gerenciamento no estágio.
 
-\## 📝 Descrição
-
-Ferramenta desenvolvida em Python para automação de inventário de rede local (LAN). O script identifica dispositivos ativos, mapeia endereços IP/MAC e consulta os fabricantes de hardware.
-
-
-
-\## 🛠️ Como Funciona
-
-\* \*\*Protocolo ARP:\*\* Envia requisições de broadcast para descobrir quem está na rede.
-
-\* \*\*Mapeamento de Camada 2:\*\* Identifica o endereço físico (MAC) de cada dispositivo.
-
-\* \*\*Consulta OUI:\*\* Traduz os primeiros bytes do MAC para identificar o fabricante (Ex: Dell, Intel, TP-Link).
-
-
-
-\## 📄 Arquivos no Repositório
-
-\* `monitor\_rede.py`: Script principal em Python.
-
-\* `inventário\_final.csv`: Relatório gerado com os dados coletados no estágio.
-
-
-
----
-
-\*Projeto realizado para consolidar conhecimentos de Redes e Automação.\*
-
+## 🚀 Tecnologias
+* Python 3
+* Scapy (Manipulação de pacotes)
+* Git/GitHub (Versionamento)
